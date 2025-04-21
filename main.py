@@ -28,3 +28,33 @@ hero = Superhero("Captain Thunder", "Neptune", "Electro-blast", "Salt water")
 print(hero.full_profile())
 print(hero.use_power())
 print(hero.reveal_weakness())
+
+# Activity 2
+
+class Animal:
+    def move(self):
+        print("The animal doth move...")
+
+class Bird(Animal):
+    def move(self):
+        print("🕊️ The bird soareth through the heavens.")
+
+class Fish(Animal):
+    def move(self):
+        print("🐟 The fish glideth through the deep waters.")
+
+class Cheetah(Animal):
+    def move(self):
+        print("🐆 The cheetah sprinteth upon the plains.")
+
+def perform_movement(creature):
+    creature.move()
+
+sparrow = Bird()
+salmon = Fish()
+leopard = Cheetah()
+
+perform_movement(sparrow)
+perform_movement(salmon)
+perform_movement(leopard)
+
